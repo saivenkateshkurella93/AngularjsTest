@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
     <script src="../angular.min.js"></script>
     <script src="../Controller/AngularjsTest.js"></script>
+    <script src="../app.js"></script>
 
 </head>
 
@@ -12,6 +13,10 @@
 
     <div ng-controller="HelloController">
         <h2>Welcome {{helloTo.title}}!</h2>
+        <label class="item">
+            <button class="button button-block button-positive"  ng-model="myVar" ng-click="showMessage()">Show Message</button>
+
+        </label>
     </div>
     </body>
 </html>
